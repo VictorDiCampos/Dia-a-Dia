@@ -1,0 +1,159 @@
+/*tags html*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("http://i.stack.imgur.com/jGlzr.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white; 
+}
+td{
+  border: 3px solid black;
+  border-radius: 4px;
+  margin: 3px 3px;
+}
+p{
+  font-size: 16px;
+  text-align: left;
+  text-indent: 40px;
+}
+p:first-letter{
+
+}
+h1{
+  letter-spacing: 14px;
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+h2{
+  text-align: center;
+  background-color: #717171;
+  border-radius: 5px;
+  border: 3px solid white;
+  margin: 3%;
+}
+h3{
+  text-align: center;
+  margin: 10px 0;
+}
+div{
+  border: 5px double white;
+  border-radius: 5px;
+  padding: 10px;
+  float: left;
+}
+li{
+  margin-left: 40px;
+}
+
+
+                          /*ID's*/
+
+#topo{
+  width: 100%;
+  border: 0;
+}
+#logo{
+  float: left;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+#nav{
+  width: 100%;
+  text-align: center;
+  background-color: #717171;
+}
+#nav a:link{
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  border-right: 20px solid transparent;
+}
+#nav a:visited{
+  color: white;
+}
+#nav a:hover{
+  background-color: orange;
+}
+#dPai{
+  margin-top: 30px;
+  width: 80%;
+  padding: 0;
+  border: 0px solid black;
+  margin-right: -2%;
+}
+#d1, #d2, #d3{
+  width: 25%;
+  height: auto;
+  margin-left: 5%;
+}
+#lista, #imagem{
+  width: 40%;
+  border: 0px;
+  margin: 3% 3%;
+}
+#tab, #form{
+  width: 100%;
+  border: 0px;
+}
+#bt{
+  border: 3px outset orange;
+  border-radius: 8px;
+}
+#adverts{
+  margin-top: 30px;
+  width: 19.5%;
+  background-color: #000000;
+  opacity: 0.5; 
+  /*filter: alpha(opacity=50);*/
+  border: 1px outset black;
+}
+#imgAdverts{
+  margin: 0 auto;
+  width: 250px;
+  height: 300px;
+}
+#rodape{
+  background-color: #262626;
+  color: #666666;
+  border: 0;
+  border-radius: 0;
+  margin: 0 0; 
+  width: 100%;
+  height: 100px;
+}
+
+
+                    /*CLASS*/
+/*adicionar a um span*/
+.k{
+  text-transform: capitalize;
+}
+
+
+/*Macete para voltar os "floats" e assim */
+/*fazer as tags engoblarem tudo o que há dentro delas*/
+.fix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*Macete para alterar APENAS a segunda tag de texto das divs filhas*/
+/*IMPORTANTE: Cada tag de texto ocupa uma posição, porém apenas as tags*/
+/*especificadas serão alteradas.*/
+/*#dPai p:nth-child(2){
+  font-family: Helvetica;
+  font-size: 25px;
+  color: purple;
+}

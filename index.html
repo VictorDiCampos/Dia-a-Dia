@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+	<!-- Permite que caracteres de acentução sejam exibidos da maneira correta -->
+	<meta charset="utf-8">
+	<!-- Recarrega a página |  content= segundos -->
+	<meta http-equiv="refresh" content="2">
+
+	<title>Hello!</title>
+
+	<!-- CSS EXTERNO -->
+	<link rel="stylesheet" href="estilo.css">
+	<!-- JS EXTERNO -->
+	<script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
+
+	<!-- 	CSS INTERNO
+	<style type="text/css">
+	td{
+		border:1px solid black;
+		border-radius: 4px;
+	}</style>-->
+</head>
+<body class="fix">
+
+	<header>
+		<div id="topo"> <a href="index.html"> <img id="logo" src="Tutorial HTML_CSS/Imagens html e css/logo-css4html.png"> </a> 
+			<!-- Manter apenas um <h1> por questões de SEO a não ser em caso de estar dentro de uma section, pois deste modo a importância não é perdida.-->
+			<h1 align="center">Hello!</h1> </div>
+			<br>
+			<nav>
+				<div id="nav">
+					<!-- Faz um link que leva a uma área da página -->
+					<a href="#lista"> LISTAS </a>
+					<a href="#imagem"> IMAGEM </a>
+					<a href="#tab"> TABELAS </a>
+					<a href="#form"> FORMULÁRIOS </a>
+				</div>
+			</nav>
+	</header>
+
+	<section>
+		<!-- DIVS -->
+		<div id="dPai">
+			<article>
+					<abbr title="Div de numero 1">
+						<div id="d1">
+							<h2> O que é Lorem Ipsum </h2>
+							<p>
+								<strong>
+									Lorem Ipsum 
+								</strong>
+								é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+								Este texto está dentro de uma <br><<span class="k">div>Span aqui<</span>/div>
+							</p>
+						</div>
+					</abbr>
+
+					<abbr title="Div de numero 2">
+						<div id="d2">
+							<h2> Porque nós o usamos? </h2>
+							<p>
+								<em>
+									É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por <cite style="color: white;">'lorem ipsum'</cite> mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).
+								</em>
+							</p>
+						</div>
+					</abbr>
+
+					<abbr title="Div de numero 3">
+						<div id="d3">
+							<h2> De onde ele vem? </h2>
+							<p>
+								<u>
+									Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, "Lorem Ipsum dolor sit amet..." vem de uma linha na seção 1.10.32.
+								</u>
+							</p>
+						</div>
+					</abbr>
+			</article>
+
+			<!-- Lista e Imagem -->
+			<article>
+					<div id="lista">
+						<h2>Lista Ordenada</h2>
+						<!-- Lista Ordenada -->
+						<ul>
+							<li> Português
+								<ol>
+									<li><strong>Oioioioioioioioioioioi</strong></li>
+									<li><em>Oioioioioioioioioioioi<br></em></li>
+									<li><u>Oioioioioioioioioioioi</u></li>
+								</ol>
+							</li>
+
+							<li> Inglês
+								<ol>
+									<li><strong>Hello</strong></li>
+									<li><em>Hi</em></li>						
+									<li><u>Whats Up</u></li>
+								</ol>
+							</li>
+						</ul>
+					</div>
+
+					<div id="imagem">
+						<h2>Imagem</h2>
+						<a href="2_Tutorial HTML e CSS Intermediário.docx"> <img id="titulo2" align="center" src="http://longren.io/wp-content/uploads/2014/03/HTML.jpg" height="386" width="512" alt="imagem descrição"> </a>
+					</div>
+			</article>
+
+			<!-- Tabela -->
+			<article>
+					<div id="tab">
+						<h2 id="titulo3"> Tabelas </h2>
+						<table align="center">
+							<tr>
+								<th> Col1 </th>
+								<th> Col2 </th>
+								<th> Col3 </th>
+							</tr>
+							<tr>
+								<td> 
+									<img src="http://lorempixel.com/image_output/animals-q-c-300-150-4.jpg" width="150" height="150"> 
+								</td>
+								<td colspan="2"> 
+									<img src="http://lorempixel.com/image_output/animals-q-c-150-150-5.jpg" width="150" height="150">
+									<img src="http://lorempixel.com/image_output/animals-q-c-150-150-6.jpg" width="150" height="150"> 
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2"> 
+									<img src="http://lorempixel.com/image_output/animals-q-c-150-150-7.jpg" width="150" height="150"> 
+									<img src="http://lorempixel.com/image_output/animals-q-c-150-150-8.jpg" width="150" height="150"> 
+								</td>
+								<td> 
+									<img src="http://lorempixel.com/image_output/animals-q-c-150-150-9.jpg" width="150" height="150"> 
+								</td>
+								<td> 
+									<img src="http://lorempixel.com/image_output/animals-q-c-150-150-10.jpg" width="150" height="150"> 
+								</td>
+							</tr>
+						</table>
+					</div>
+			</article>
+
+			<!-- Forms -->
+			<article>
+					<div id="form">
+						<h2 id="titulo4"> Forms </h2>
+						<form>
+							<!-- tentar input redondo -->
+							<input type="text" placeholder="Login">
+							<br><br>
+							<input type="password" placeholder="Password" >
+							<br><br>
+							<textarea rows="6" cols="40" placeholder="Digite seu comentário"></textarea>
+							<input id="bt" type="submit" value="GO!">
+							<br><br>
+
+							<!-- <input type="checkbox"> <input type="radio"> <br><br>-->
+
+							<select>
+								<option> Op1 </option>
+								<option> Op2 </option>
+								<option value="terceira opção"> Op3 </option>
+							</select>
+						</form>
+					</div>
+			</article>
+		</div>
+	</section>
+
+	<aside>
+			<div id="adverts">
+				<h3>Aqui irão os anuncios!</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit enim in nibh finibus hendrerit. Sed dapibus blandit nibh, sed sagittis ipsum. Proin auctor dolor ac arcu malesuada, sit amet pharetra nibh sagittis. Nunc et justo ac diam interdum efficitur id eget mauris. 
+					Nunc bibendum, nisi in porta vestibulum, augue nisi volutpat magna, eu aliquet purus nisl a justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec hendrerit mi quis metus ultrices, quis viverra ex rhoncus. Nulla pellentesque congue velit. Aliquam et mi non nibh gravida pulvinar. Donec vel condimentum elit, ac vehicula lacus.Sed feugiat scelerisque nisl, id ornare erat feugiat ac.
+					Phasellus eget mi eget mauris auctor efficitur in nec justo. Nulla laoreet massa ac rutrum sagittis. Ut sodales dui vehicula molestie feugiat. Nulla vehicula dapibus faucibus. In eget varius ante. Morbi commodo, ipsum ut posuere vestibulum, ex neque feugiat diam, et semper ipsum libero at urna. Etiam nibh mauris, facilisis eu semper sit amet, molestie nec lectus. Pellentesque vestibulum elit id pharetra finibus. Suspendisse sed venenatis arcu, nec euismod dolor.
+				</p>
+				<img src="http://lorempixel.com/image_output/city-h-g-250-300-5.jpg" id="imgAdverts">
+			</div>
+	</aside>
+
+	<footer>
+			<div id="rodape">
+				rodapé
+			</div>
+	</footer>
+
+	</body>
+
+	</html>
