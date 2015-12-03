@@ -1,10 +1,11 @@
-/*tags html*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+                      /*TAGS HTML*/
 body{
   background: url("http://i.stack.imgur.com/jGlzr.png");
   background-repeat: no-repeat;
@@ -24,7 +25,8 @@ p{
   text-indent: 40px;
 }
 p:first-letter{
-
+  font-family: Helvetica;
+  font-size: 30px;
 }
 h1{
   letter-spacing: 14px;
@@ -50,9 +52,19 @@ div{
   border-radius: 5px;
   padding: 10px;
   float: left;
+  position: relative;
 }
-li{
+ul, ol, li{
   margin-left: 40px;
+}
+li:before{
+  content: "Diga: ";
+}
+cite:before{
+  content: open-quote;
+}
+cite:after{
+  content: close-quote;
 }
 
 
@@ -111,12 +123,26 @@ li{
   border: 3px outset orange;
   border-radius: 8px;
 }
-#adverts{
+#social{
   margin-top: 30px;
-  width: 19.5%;
-  background-color: #000000;
-  opacity: 0.5; 
-  /*filter: alpha(opacity=50);*/
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  word-spacing: 20px;
+  background-color: white;
+  border: 0;
+}
+#socialimg{
+  width: 30px;
+  height: 30px;
+}
+#adverts{
+  margin-top: 10px;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*Serve para a tag e tudo aquilo que esiver dentro dela*/
+  /* opacity: 0.5;
+  filter: alpha(opacity=50);*/
   border: 1px outset black;
 }
 #imgAdverts{
@@ -135,7 +161,7 @@ li{
 }
 
 
-                    /*CLASS*/
+                          /*CLASS*/
 /*adicionar a um span*/
 .k{
   text-transform: capitalize;
