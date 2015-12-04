@@ -72,18 +72,26 @@ cite:after{
 
 #topo{
   width: 100%;
+  padding-top: 100px; 
   border: 0;
 }
 #logo{
   float: left;
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
+  margin-left: 60px;
 }
 #nav{
+  position: fixed;
   width: 100%;
   text-align: center;
   background-color: #717171;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
 }
 #nav a:link{
   text-decoration: none;
@@ -107,17 +115,19 @@ cite:after{
 }
 #d1, #d2, #d3{
   width: 25%;
-  height: auto;
+  height: 550px;
   margin-left: 5%;
 }
 #lista, #imagem{
   width: 40%;
   border: 0px;
   margin: 3% 3%;
+  padding-top: 60px; 
 }
 #tab, #form{
   width: 100%;
   border: 0px;
+  padding-top: 60px;
 }
 #bt{
   border: 3px outset orange;
@@ -140,10 +150,14 @@ cite:after{
   margin-top: 10px;
   width: 20%;
   background-color: rgba(0, 0, 0, 0.5);
+  border: 0px outset black;
+  margin-bottom: 30px;
   /*Serve para a tag e tudo aquilo que esiver dentro dela*/
   /* opacity: 0.5;
   filter: alpha(opacity=50);*/
-  border: 1px outset black;
+  /*Usando float right, essa div iria pra a direita da div pai, 
+  porém seria necessário delimitar uma margem */
+  /*float: right;*/
 }
 #imgAdverts{
   margin: 0 auto;
