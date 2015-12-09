@@ -40,7 +40,7 @@
 		<br>
 	</header>
 
-	<section>
+	<section >
 		<!-- DIVS -->
 		<div id="dPai">
 			<article>
@@ -116,28 +116,47 @@
 							<th> Col2 </th>
 							<th> Col3 </th>
 						</tr>
+
 						<tr>
 							<!-- Data(dados) da Tabela -->
-							<td> 
-								<img src="http://lorempixel.com/image_output/nightlife-q-g-150-150-5.jpg" width="150" height="150"> 
-							</td>
+							<td> <p>1</p> </td>
+							<!-- colspan = agrupa COLUNAS -->
 							<td colspan="2"> 
-								<img src="http://lorempixel.com/image_output/city-q-g-150-150-1.jpg" width="150" height="150">
-								<img src="http://lorempixel.com/image_output/city-q-g-150-150-2.jpg" width="150" height="150"> 
+								<p>2</p>
+								<p>3</p>
+							</td>
+						</tr>
+
+						<tr>
+							<!-- rowspan = agrupa LINHAS -->
+							<td rowspan="2"> 
+								<p>4</p> 
+								<p>5</p>
+								<p>6</p>
+								<br>
+								<p>9</p> 
+								<p>10</p>
+								<p>11</p>  
+							</td>
+							<td> <p>7</p>	</td>
+							<td> <p>8</p> </td>
+						</tr>
+
+						<tr>
+							<td> <p>12</p> </td>
+							<td rowspan="2" style="border-bottom = 0; border-left: 0;">
+								<p>13</p>
+								<br>
+								<p>16</p>
 							</td>
 						</tr>
 						<tr>
-							<td rowspan="2"> 
-								<img src="http://lorempixel.com/image_output/city-q-g-150-150-3.jpg" width="150" height="150"> 
-								<img src="http://lorempixel.com/image_output/nightlife-q-g-150-150-8.jpg" width="150" height="150"> 
-							</td>
-							<td> 
-								<img src="http://lorempixel.com/image_output/nightlife-q-g-150-150-9.jpg" width="150" height="150"> 
-							</td>
-							<td> 
-								<img src="http://lorempixel.com/image_output/city-q-g-150-150-4.jpg" width="150" height="150"> 
+							<td> <p>14</p> </td>
+							<td colspan="2" style="border-right = 0; border-top: 0;">
+								<p>15</p>
 							</td>
 						</tr>
+
 					</table>
 				</div>
 			</article>
@@ -157,7 +176,6 @@
 						<br><br>
 
 						<!-- <input type="checkbox"> <input type="radio"> <br><br>-->
-
 						<select>
 							<option> Op1 </option>
 							<option> Op2 </option>
