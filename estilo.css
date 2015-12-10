@@ -144,13 +144,21 @@ td > p{
 #nav a:hover{
   background-color: orange;
 }
-#dPai{
+#art-1-2{
   margin-top: 30px;
   width: 80%;
   padding: 0;
   border: 0px solid black;
   margin-right: -2%;
   clear: right;
+}
+#art-3-4{
+  margin-top: 30px;
+  width: 80%;
+  padding: 0;
+  border: 0px solid black;
+  margin-right: -2%;
+  clear: top;
 }
 
 /* Seleciona todos os articles da div pai
