@@ -5,7 +5,7 @@
 }
 
 
-                      /*TAGS HTML*/
+/*TAGS HTML*/
 body{
   background: url("http://i.stack.imgur.com/jGlzr.png");
   background-repeat: no-repeat;
@@ -14,10 +14,21 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   color: white; 
 }
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
 td{
-  border: 3px solid black;
+  background-color: white;
+  /*border: 3px solid black;*/
+  color: black;
   border-radius: 4px;
   margin: 3px 3px;
+}
+td > p{
+  display: inline-table;
+  font-size: 120;
+  text-align: center;
 }
 p{
   font-size: 16px;
@@ -34,10 +45,10 @@ h1{
   width: 400px;
   margin: 20px auto;
   text-align: center;
-  border: 3px solid rgba(255, 255, 255, 0.7);
+  border: 3px double rgba(255, 255, 255, 0.7);
   /*border-radius: 5px;*/
   border-radius: 1% 100%;
-  background-color: rgba(0, 77, 0, 0.6);
+  
   
   /*  Shadow interna a div  */
   /*inset = interno*/
@@ -46,7 +57,7 @@ h1{
   /*atributo 3 = tamanho do desfoque(quanto maior, mais transparente fica)*/
   /*atributo 4 = tamanho da sombra(não necessariamente embassada)*/
   /*atributo 5 = cor*/
-  box-shadow: inset 5px 0px 10px 1px white;
+  
 
   /*Shadow externa a div*/
   /*box-shadow: 0px 0px 3px 1px white;*/
@@ -61,7 +72,7 @@ h2{
 }
 h3{
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 div{
   border: 5px double white;
@@ -82,18 +93,9 @@ cite:before{
 cite:after{
   content: close-quote;
 }
-table{
-  margin-left: auto;
-  margin-right: auto;
-}
-td > p{
-  display: inline-table;
-  font-size: 70;
-}
 
 
-                          /*ID's*/
-
+/*ID's*/
 #topo{
   width: 100%;
   padding-top: 100px; 
@@ -144,28 +146,22 @@ td > p{
 #nav a:hover{
   background-color: orange;
 }
-#art-1-2{
+#dPai{
   margin-top: 30px;
-  width: 80%;
+  margin-right: 0px;
+  width: 75%;
   padding: 0;
   border: 0px solid black;
-  margin-right: -2%;
+  margin-right: 0%;
   clear: right;
 }
-#art-3-4{
-  margin-top: 30px;
-  width: 80%;
-  padding: 0;
-  border: 0px solid black;
-  margin-right: -2%;
-  clear: top;
-}
 
-/* Seleciona todos os articles da div pai
- * (contanto que as articles estejam no primeiro nivel) */
-/*#dPai > article{
+/* Seleciona todos os articles da div pai(contanto que as articles estejam no primeiro nivel) */
+/*
+#dPai > article{
   color: orange;
-}*/
+}
+*/
 
 #d1, #d2, #d3{
   width: 25%;
@@ -180,8 +176,17 @@ td > p{
 }
 #tab, #form{
   width: 100%;
-  border: 0px;
+  border: 0;
+  border-radius: 0;
   padding-top: 60px;
+  padding-bottom: 190px;
+  float: left;
+}
+#tab{
+  background: linear-gradient(to bottom,  rgba(200,164,132, 0.1) 1%, rgba(0, 0, 0, 0.5) 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top,  rgba(200,164,132, 0.0) 1%, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.5) 90%, rgba(200,164,132, 0.0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(200,164,132, 0.1) 1%, rgba(0, 0, 0, 0.5) 20%); /* Chrome10-25,Safari5.1-6 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8a484', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 #bt{
   width: 40px;
@@ -191,8 +196,7 @@ td > p{
   cursor: pointer;
 }
 #social{
-  margin-top: 30px;
-  width: 20%;
+  width: 100%;
   height: 50px;
   text-align: center;
   word-spacing: 20px;
@@ -206,9 +210,12 @@ td > p{
 #adverts{
   margin-top: 10px;
   width: 20%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 0px outset black;
-  margin-bottom: 30px;
+  height: 2400px;
+  background-color: rgba(0, 0, 255, 1);
+  border: 0 solid rgba(0, 0, 0, 1);
+  border-left: 0px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+/*   box-shadow: inset 0 0 30px -1px #c8a484; */
   /*Serve para a tag e tudo aquilo que esiver dentro dela*/
   /* opacity: 0.5;
   filter: alpha(opacity=50);*/
@@ -229,15 +236,15 @@ td > p{
   margin: 0 0; 
   width: 100%;
   height: 150px;
+  z-index: 1;
 }
 
 
-                          /*CLASS*/
+/*CLASS*/
 /*adicionar a um span*/
 .k{
   text-transform: capitalize;
 }
-
 
 /*Macete para voltar os "floats" e assim */
 /*fazer as tags engoblarem tudo o que há dentro delas*/
@@ -246,11 +253,17 @@ td > p{
   display: block;
   clear: both;
 }
+
 /*Macete para alterar APENAS a segunda tag de texto das divs filhas*/
 /*IMPORTANTE: Cada tag de texto ocupa uma posição, porém apenas as tags*/
 /*especificadas serão alteradas.*/
-/*#dPai p:nth-child(2){
+/*
+#dPai p:nth-child(2){
   font-family: Helvetica;
   font-size: 25px;
   color: purple;
-}
+  }
+*/
+  .big-form{
+    height: 40px;
+  }
