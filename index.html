@@ -22,26 +22,34 @@
 	}</style>-->
 </head>
 <body class="fix">
-	<header>
+	<header class="header">
+		<div id="topo">
+			<div id="topo-left"> 
+				<!-- Manter apenas um <h1> por questões de SEO a não ser em caso de estar dentro de uma section, pois deste modo a importância não é perdida.-->
+				<h1 align="center">Hello!</h1> 
+			</div>
+			<div id="topo-right">
+				<a href="index.html"> <img id="logo" src="imagens/logo-css4html.png" align="center"> </a>
+			</div>
+		</div>
 		<nav>
 			<div id="nav">
-				<!-- Faz um link que leva a uma área da página -->
-				<a href="#topo"> HOME </a>
-				<a href="#lista"> LISTAS </a>
-				<a href="#imagem"> IMAGEM </a>
-				<a href="#tab"> TABELAS </a>
-				<a href="#form"> FORMULÁRIOS </a>
-			</div>
-		</nav>
-
-		<div id="topo"> <a href="index.html"> <img id="logo" src="imagens/logo-css4html.png"> </a> 
-			<!-- Manter apenas um <h1> por questões de SEO a não ser em caso de estar dentro de uma section, pois deste modo a importância não é perdida.-->
-			<h1 align="center">Hello!</h1> 
+				<div id="div-links">
+					<!-- Faz um link que leva a uma área da página -->
+					<ul id="links">
+						<li><a href="#topo"> HOME </a></li>
+						<li><a href="#div-lista"> LISTAS </a></li>
+						<li><a href="#imagem"> IMAGEM </a></li>
+						<li><a href="#tab"> TABELAS </a></li>
+						<li><a href="#form"> FORMULÁRIOS </a></li>
+					</ul>
+				</div>
+				<div id="nav-right"></div>
+			</nav>
 		</div>
-		<br>
 	</header>
 
-	<section >
+	<section class="section">
 		<!-- DIVS -->
 		<div id="dPai">
 			<article>
@@ -83,17 +91,17 @@
 
 			<!-- Lista e Imagem -->
 			<article>
-				<div id="lista">
+				<div id="div-list">
 					<h2>Lista Ordenada</h2>
 					<!-- Lista Ordenada -->
-					<ul> Português
+					<ul id="example-lists"> Português
 						<!-- utilizar <ol> para numerar -->
 						<li><strong>Oi</strong></li>
 						<li><em>Olá<br></em></li>
 						<li><u>Colé que é parça?</u></li>
 					</ul>
 
-					<ul> Inglês
+					<ul id="example-lists"> Inglês
 						<li><strong>Hi</strong></li>
 						<li><em>Hello</em></li>						
 						<li><u>Whats Up?</u></li>
@@ -102,7 +110,7 @@
 
 				<div id="imagem">
 					<h2>Imagem</h2>
-					<a href="2_Tutorial HTML e CSS Intermediário.docx"> <img id="titulo2" align="center" src="http://longren.io/wp-content/uploads/2014/03/HTML.jpg" height="386" width="512" alt="imagem descrição"> </a>
+					<a href="/home/css4html/Documents/Tutoriais/Tutorial HTML_CSS/1_Tutorial HTML e CSS Iníciantes.docx"> <img id="titulo2" align="center" src="http://longren.io/wp-content/uploads/2014/03/HTML.jpg" height="386" width="512" alt="imagem descrição"> </a>
 				</div>
 			</article>
 
@@ -188,13 +196,12 @@
 		</div>
 	</section>
 
-	<aside>
-
+	<aside class="aside">
 		<div id="adverts">
 			<div id="social">
 				<img src="imagens/fb.png" id="socialimg"> <img src="imagens/tw.png" id="socialimg"> <img src="imagens/inst.png" id="socialimg"> <img src="imagens/gp.png" id="socialimg"> <img src="imagens/pinterest.png" id="socialimg">
 			</div>
-			<h3>Aqui irão os anúncios!</h3>
+			<h3>Aqui irão os anúncios e Side Menus!</h3>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse suscipit enim in nibh finibus hendrerit. Sed dapibus blandit nibh, sed sagittis ipsum. Proin auctor dolor ac arcu malesuada, sit amet pharetra nibh sagittis. Nunc et justo ac diam interdum efficitur id eget mauris. 
 				Nunc bibendum, nisi in porta vestibulum, augue nisi volutpat magna, eu aliquet purus nisl a justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec hendrerit mi quis metus ultrices, quis viverra ex rhoncus. Nulla pellentesque congue velit. Aliquam et mi non nibh gravida pulvinar. Donec vel condimentum elit, ac vehicula lacus.Sed feugiat scelerisque nisl, id ornare erat feugiat ac.
@@ -204,10 +211,11 @@
 		</div>
 	</aside>
 
-	<footer>
+	<footer class="footer" align="bottom">
 		<div id="rodape">
 			rodapé
 		</div>
 	</footer>
+
 </body>
 </html>
