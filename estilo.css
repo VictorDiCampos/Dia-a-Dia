@@ -78,144 +78,121 @@ h3{
   margin-bottom: 10px;
 }
 div{
-  border: 5px double white;
-  border-radius: 5px;
   padding: 10px;
-  float: left;
+  /*float: left;*/
   position: relative;
 }
 ul, ol, li{
   margin-left: 40px;
 }
-
-/*li:before{
-  content: "Diga: ";
-  }*/
-  cite:before{
-    content: open-quote;
-  }
-  cite:after{
-    content: close-quote;
-  }
+cite:before{
+  content: open-quote;
+}
+cite:after{
+  content: close-quote;
+}
 
 
-  /*ID's*/
-  #topo{
-    /*margin: -20px;*/
-    width: 100%;
-    border-radius: 0;
-    border: 0;
-    padding: 0;
-  }
-  #topo-left{
-    float: left;
-    width: 80%;
-    padding-top: 50px; 
-    border: 0;
-    border-radius: 0;
-    background-color: #4d4d4d;
-  }
-  #topo-right{
-    border: 0; 
-    border-left: 1px solid white; 
-    border-radius: 0; 
-    background-color: #4d4d4d; 
-    height: 192px; 
-    width: 20%;
-  }
-  #logo{
-    float: left;
-    border-radius: 0%;
-    width: 120px;
-    height: 120px;
-    margin: 10% 32%;
-  }
+/*ID's*/
+#topo{
+  /*margin: -20px;*/
+  width: 100%;
+  padding: 0;
+}
+#topo-left{
+  float: left;
+  width: 80%;
+  padding-top: 50px; 
+  background-color: #4d4d4d;
+}
+#topo-right{
+  border-left: 1px solid white; 
+  background-color: #4d4d4d; 
+  height: 192px; 
+  width: 20%;
+}
+#logo{
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin: 10% 32%;
+}
 
-  #nav{
-    /*position: fixed;*/
-    margin: 0;
-    width: 100%;
-    border-radius: 0;
-    border: 0;
-    padding: 0;
-    z-index: 999;
-  }
-  #div-links{
-    /*position: fixed;*/
-    width: 80%;
-    text-align: center;
-    background-color: #717171;
-    border-radius: 0;
-    border: 0;
-    border-bottom: 1px solid white; 
-    /*border-radius: 40px;*/
-    /*border-top-left-radius: 0px;*/
-    /*border-top-right-radius: 0px;*/
-    /*top: 0px;*/
-    /*left: 0px;*/
-  }
-  ul#links li{
-    display: inline;
-  }
-  ul#links li a{
-    padding: 5px;
-    padding-top: 10px;
-    text-decoration: none;
-    text-align: left;
-    color: white;
-    font-size: 20px;
-    border-radius: 0 0 5px 5px; 
-  }
-  ul#links li a:visited{
-    color: white;
-  }
-  ul#links li a:hover{
-    background-color: orange; 
-    /*rgb(200,164,132)*/
-  }
-  #nav-right{
-    border: 0; 
-    border-left: 1px solid white; 
-    border-bottom: 1px solid white; 
-    border-radius: 0; 
-    background-color: #717171; 
-    height: 45px; 
-    width: 20%;
-  }
+#nav{
+  /*position: fixed;*/
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 999;
+}
+#div-links{
+  /*position: fixed;*/
+  width: 80%;
+  text-align: center;
+  background-color: #717171;
+  border-bottom: 1px solid white; 
+  /*border-radius: 40px;*/
+  /*border-top-left-radius: 0px;*/
+  /*border-top-right-radius: 0px;*/
+  /*top: 0px;*/
+  /*left: 0px;*/
+}
+ul#links li{
+  display: inline;
+}
+ul#links li a{
+  padding: 5px;
+  padding-top: 10px;
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  border-radius: 0 0 5px 5px; 
+}
+ul#links li a:visited{
+  color: white;
+}
+ul#links li a:hover{
+  background-color: orange;
+}
+#nav-right{
+  border-left: 1px solid white; 
+  border-bottom: 1px solid white; 
+  background-color: #717171; 
+  height: 45px; 
+  width: 20%;
+}
 
-  #dPai{
-    margin-top: 30px;
-    margin-right: 0px;
-    width: 100%;
-    padding: 0;
-    border: 0px solid black;
-  }
+#dPai{
+  margin-top: 30px;
+  margin-right: 0px;
+  width: 100%;
+  padding: 0;
+  /*border: 0px solid black;*/
+}
+#divs abbr div:nth-child(1){
+  width: 28%;
+  margin: 120px 0 150px 4%;
+  border: 5px double white;
+  border-radius: 5px;
+}
+#list-image{
+  width: 40%;
+  margin: 3% 3%;
+  padding-top: 60px; 
+}
 
-  /* Seleciona todos os articles da div pai(contanto que as articles estejam no primeiro nivel) */
+/* Seleciona todos os articles da div pai(contanto que as articles estejam no primeiro nivel) */
 /*
 #dPai > article{
   color: orange;
 }
 */
-
-#d1, #d2, #d3{
-  width: 28%;
-  height: 550px;
-  margin-left: 4%;
-}
-#div-list, #imagem{
-  width: 40%;
-  border: 0px;
-  margin: 3% 3%;
-  padding-top: 60px; 
-}
 ul#example-lists li:before{
   content: "Diga: ";
 }
 #tab, #form{
   width: 100%;
-  border: 0;
-  border-radius: 0;
   padding-top: 60px;
   padding-bottom: 190px;
   float: left;
@@ -233,36 +210,32 @@ ul#example-lists li:before{
   border-radius: 8px;
   cursor: pointer;
 }
+
+#adverts{
+  width: 100%;
+  height: 2820px; /*Tamanho certo*/
+  /*height: 2400px;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 1);
+  /*Serve para a tag e tudo aquilo que esiver dentro dela*/
+  /*opacity: 0.5;*/
+  /*filter: alpha(opacity=50);*/
+}
 #social{
   width: 100%;
   height: 50px;
   text-align: center;
   word-spacing: 20px;
   background-color: white;
-  border: 0;
   margin: 20px 0;
+  border-radius: 5px;
 }
-#socialimg{
+#social-img{
   width: 30px;
   height: 30px;
 }
-#adverts{
-  width: 100%;
-  /*height: 2650px;*/
-  height: 2400px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 0 solid rgba(0, 0, 0, 1);
-  border-left: 1px solid rgba(255, 255, 255, 1);
-  border-radius: 0;
-  /*   box-shadow: inset 0 0 30px -1px #c8a484; */
-  /*Serve para a tag e tudo aquilo que esiver dentro dela*/
-  /* opacity: 0.5;
-  filter: alpha(opacity=50);*/
-  /*Usando float right, essa div iria pra a direita da div pai, 
-  porém seria necessário delimitar uma margem */
-  /*float: right;*/
-}
-#imgAdverts{
+
+#img-adverts{
   margin: 0 auto;
   width: 250px;
   height: 300px;
@@ -270,8 +243,6 @@ ul#example-lists li:before{
 #rodape{
   background-color: #262626;
   color: #666666;
-  border: 0;
-  border-radius: 0;
   margin: 0 0; 
   width: 100%;
   height: 150px;
@@ -285,21 +256,29 @@ ul#example-lists li:before{
 .k{
   text-transform: capitalize;
 }
+
 .header{
   width: 100%;
 }
+.header div{
+  float: left;
+}
+
 .section{
   width: 80%;
   float: left;
 }
+.section div{
+  float: left;
+}
+
 .aside{
   width: 20%;
   float: right;
 }
+
 .footer{
   width: 100%;
-/*  position: absolute;
-  bottom: 0;*/
 }
 
 /*Macete para voltar os "floats" e assim */
@@ -310,16 +289,6 @@ ul#example-lists li:before{
   clear: both;
 }
 
-/*Macete para alterar APENAS a segunda tag de texto das divs filhas*/
-/*IMPORTANTE: Cada tag de texto ocupa uma posição, porém apenas as tags*/
-/*especificadas serão alteradas.*/
-/*
-#dPai p:nth-child(2){
-  font-family: Helvetica;
-  font-size: 25px;
-  color: purple;
-  }
-  */
-  .big-form{
-    height: 40px;
-  }
+.big-form{
+  height: 40px;
+}

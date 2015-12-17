@@ -29,7 +29,9 @@
 				<h1 align="center">Hello!</h1> 
 			</div>
 			<div id="topo-right">
-				<a href="index.html"> <img id="logo" src="imagens/logo-css4html.png" align="center"> </a>
+				<a href="index.html"> 
+					<img id="logo" src="imagens/logo-css4html.png" align="center"> 
+				</a>
 			</div>
 		</div>
 		<nav>
@@ -38,10 +40,10 @@
 					<!-- Faz um link que leva a uma área da página -->
 					<ul id="links">
 						<li><a href="#topo"> HOME </a></li>
-						<li><a href="#div-lista"> LISTAS </a></li>
-						<li><a href="#imagem"> IMAGEM </a></li>
-						<li><a href="#tab"> TABELAS </a></li>
-						<li><a href="#form"> FORMULÁRIOS </a></li>
+						<li><a href="#list-image"> LISTA </a></li>
+						<li><a href="#list-image"> IMAGEM </a></li>
+						<li><a href="#tab"> TABELA </a></li>
+						<li><a href="#form"> FORMULÁRIO </a></li>
 					</ul>
 				</div>
 				<div id="nav-right"></div>
@@ -52,9 +54,9 @@
 	<section class="section">
 		<!-- DIVS -->
 		<div id="dPai">
-			<article>
+			<article id="divs">
 				<abbr title="Div de numero 1">
-					<div id="d1">
+					<div>
 						<h2> O que é Lorem Ipsum </h2>
 						<p>
 							<strong>
@@ -67,7 +69,7 @@
 				</abbr>
 
 				<abbr title="Div de numero 2">
-					<div id="d2">
+					<div>
 						<h2> Porque nós o usamos? </h2>
 						<p>
 							<em>
@@ -78,7 +80,7 @@
 				</abbr>
 
 				<abbr title="Div de numero 3">
-					<div id="d3">
+					<div>
 						<h2> De onde ele vem? </h2>
 						<p>
 							<u>
@@ -91,7 +93,7 @@
 
 			<!-- Lista e Imagem -->
 			<article>
-				<div id="div-list">
+				<div id="list-image">
 					<h2>Lista Ordenada</h2>
 					<!-- Lista Ordenada -->
 					<ul id="example-lists"> Português
@@ -108,9 +110,9 @@
 					</ul>
 				</div>
 
-				<div id="imagem">
+				<div id="list-image">
 					<h2>Imagem</h2>
-					<a href="/home/css4html/Documents/Tutoriais/Tutorial HTML_CSS/1_Tutorial HTML e CSS Iníciantes.docx"> <img id="titulo2" align="center" src="http://longren.io/wp-content/uploads/2014/03/HTML.jpg" height="386" width="512" alt="imagem descrição"> </a>
+					<a href="/home/css4html/Documents/Tutoriais/Tutorial HTML_CSS/1_Tutorial HTML e CSS Iníciantes.docx"> <img align="center" src="http://longren.io/wp-content/uploads/2014/03/HTML.jpg" height="386" width="512" alt="imagem descrição"> </a>
 				</div>
 			</article>
 
@@ -139,13 +141,9 @@
 						<tr>
 							<!-- rowspan = agrupa LINHAS -->
 							<td rowspan="2"> 
-								<p>4</p> 
-								<p>5</p>
-								<p>6</p>
+								<p>4</p><p>5</p><p>6</p>
 								<br>
-								<p>9</p> 
-								<p>10</p>
-								<p>11</p>  
+								<p>9</p><p>10</p><p>11</p>  
 							</td>
 							<td> <p>7</p>	</td>
 							<td> <p>8</p> </td>
@@ -199,7 +197,11 @@
 	<aside class="aside">
 		<div id="adverts">
 			<div id="social">
-				<img src="imagens/fb.png" id="socialimg"> <img src="imagens/tw.png" id="socialimg"> <img src="imagens/inst.png" id="socialimg"> <img src="imagens/gp.png" id="socialimg"> <img src="imagens/pinterest.png" id="socialimg">
+				<img src="imagens/fb.png" id="social-img">
+				<img src="imagens/tw.png" id="social-img">
+				<img src="imagens/inst.png" id="social-img">
+				<img src="imagens/gp.png" id="social-img">
+				<img src="imagens/pinterest.png" id="social-img">
 			</div>
 			<h3>Aqui irão os anúncios e Side Menus!</h3>
 			<p>
@@ -207,11 +209,11 @@
 				Nunc bibendum, nisi in porta vestibulum, augue nisi volutpat magna, eu aliquet purus nisl a justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec hendrerit mi quis metus ultrices, quis viverra ex rhoncus. Nulla pellentesque congue velit. Aliquam et mi non nibh gravida pulvinar. Donec vel condimentum elit, ac vehicula lacus.Sed feugiat scelerisque nisl, id ornare erat feugiat ac.
 				Phasellus eget mi eget mauris auctor efficitur in nec justo. Nulla laoreet massa ac rutrum sagittis. Ut sodales dui vehicula molestie feugiat. Nulla vehicula dapibus faucibus. In eget varius ante. Morbi commodo, ipsum ut posuere vestibulum, ex neque feugiat diam, et semper ipsum libero at urna. Etiam nibh mauris, facilisis eu semper sit amet, molestie nec lectus. Pellentesque vestibulum elit id pharetra finibus. Suspendisse sed venenatis arcu, nec euismod dolor.
 			</p>
-			<img src="http://lorempixel.com/image_output/nightlife-h-g-250-300-4.jpg" id="imgAdverts">
+			<img src="http://lorempixel.com/image_output/nightlife-h-g-250-300-4.jpg" id="img-adverts">
 		</div>
 	</aside>
 
-	<footer class="footer" align="bottom">
+	<footer class="footer">
 		<div id="rodape">
 			rodapé
 		</div>
