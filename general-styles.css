@@ -1,0 +1,37 @@
+/*Macete para voltar os "floats" e assim */
+/*fazer as tags engoblarem tudo o que há dentro delas*/
+.fix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*@font-face{
+  font-family: teste;
+  src: url("http://dl.1001fonts.com/architext.zip");
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+/*TAGS HTML*/
+body{
+  background: url("http://i.stack.imgur.com/jGlzr.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-size: 20px;
+  font-family: 'Titillium Web', Helvetica, sans-serif;
+  color: white; 
+  background-attachment: fixed;
+}
+div{
+  padding: 10px;
+  /*float: left;*/
+  position: relative;
+}

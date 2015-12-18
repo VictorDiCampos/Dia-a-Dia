@@ -10,7 +10,12 @@
 	<title>Hello!</title>
 
 	<!-- CSS EXTERNO -->
-	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="general-styles.css">
+	<link rel="stylesheet" href="header-styles.css">
+	<link rel="stylesheet" href="section-styles.css">
+	<link rel="stylesheet" href="aside-footer-styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet'>
+
 	<!-- JS EXTERNO -->
 	<script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
 
@@ -30,7 +35,7 @@
 			</div>
 			<div id="topo-right">
 				<a href="index.html"> 
-					<img id="logo" src="imagens/logo-css4html.png" align="center"> 
+					<img id="logo" src="imagens/logo-css4html copy.png" align="center"> 
 				</a>
 			</div>
 		</div>
@@ -63,7 +68,7 @@
 								Lorem Ipsum 
 							</strong>
 							é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
-							Este texto está dentro de uma <br><<span class="k">div>Span aqui<</span>/div>
+							Este texto está dentro de uma <br><<span class="caps">div>Span aqui<</span>/div>
 						</p>
 					</div>
 				</abbr>
@@ -110,6 +115,7 @@
 					</ul>
 				</div>
 
+				<!-- IMAGEM -->
 				<div id="list-image">
 					<h2>Imagem</h2>
 					<a href="/home/css4html/Documents/Tutoriais/Tutorial HTML_CSS/1_Tutorial HTML e CSS Iníciantes.docx"> <img align="center" src="http://longren.io/wp-content/uploads/2014/03/HTML.jpg" height="386" width="512" alt="imagem descrição"> </a>
@@ -119,7 +125,7 @@
 			<!-- Tabela -->
 			<article>
 				<div id="tab">
-					<h2 id="titulo3"> Tabelas </h2>
+					<h2 id="titulo3"> Tabela </h2>
 					<table align="center">
 						<tr>
 							<!-- Header da Tabela -->
@@ -171,22 +177,24 @@
 			<!-- Forms -->
 			<article>
 				<div id="form">
-					<h2 id="titulo4"> Forms </h2>
-					<form class="big-form">
+					<h2 id="titulo4"> Formulário </h2>
+					<form class="formulario">
+
 						<!-- tentar input redondo -->
-						<input type="text" class="big-form" placeholder="Login">
+						<input id="login" type="text" class="big-form" placeholder="Login">
 						<br><br>
-						<input type="password" placeholder="Password" >
+						<input id="password" type="password" placeholder="Password" >
 						<br><br>
 						<textarea rows="6" cols="40" placeholder="Digite seu comentário"></textarea>
 						<input id="bt" type="submit" value="GO!">
 						<br><br>
 
 						<!-- <input type="checkbox"> <input type="radio"> <br><br>-->
-						<select>
+						<select id="select">
 							<option> Op1 </option>
 							<option> Op2 </option>
 							<option value="terceira opção"> Op3 </option>
+							<option> Op4 </option>
 						</select>
 					</form>
 				</div>
