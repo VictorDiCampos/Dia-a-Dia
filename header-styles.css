@@ -82,13 +82,15 @@ ul#links li a{
   text-align: left;
   color: white;
   font-size: 20px;
-  border-radius: 0 0 5px 5px; 
+  border-radius: 0 0 5px 5px;
+  transition-duration: 1s; 
 }
 ul#links li a:visited{
   color: white;
 }
 ul#links li a:hover{
   background-color: orange;
+  transition-duration: 0.8s;
 }
 #nav-right{
   border-left: 1px solid white; 

@@ -125,13 +125,13 @@
 			<!-- Tabela -->
 			<article>
 				<div id="tab">
-					<h2 id="titulo3"> Tabela </h2>
+					<h2 id="titulo3"> Table </h2>
 					<table align="center">
 						<tr>
 							<!-- Header da Tabela -->
-							<th> Col1 </th>
-							<th> Col2 </th>
-							<th> Col3 </th>
+							<th> Collumn 1 </th>
+							<th> Collumn 2 </th>
+							<th> Collumn 3 </th>
 						</tr>
 
 						<tr>
@@ -174,27 +174,41 @@
 				</div>
 			</article>
 
-			<!-- Forms -->
+			<!-- Form -->
 			<article>
 				<div id="form">
 					<h2 id="titulo4"> Formulário </h2>
 					<form class="formulario">
 
 						<!-- tentar input redondo -->
-						<input id="login" type="text" class="big-form" placeholder="Login">
+						<label class="lb-style" id="lb-login">Login</label>
+						<input class="input-style" type="text" placeholder="">
 						<br><br>
-						<input id="password" type="password" placeholder="Password" >
+
+
+						<label class="lb-style">Password</label>
+						<input class="input-style" type="password" placeholder="" >
 						<br><br>
-						<textarea rows="6" cols="40" placeholder="Digite seu comentário"></textarea>
-						<input id="bt" type="submit" value="GO!">
+
+
+						<textarea rows="10" cols="53" placeholder="Digite seu comentário"></textarea>
+						<br>
+						<input class="bt-style" type="submit" value="GO!">
 						<br><br>
 
 						<!-- <input type="checkbox"> <input type="radio"> <br><br>-->
-						<select id="select">
-							<option> Op1 </option>
-							<option> Op2 </option>
-							<option value="terceira opção"> Op3 </option>
-							<option> Op4 </option>
+						<select id="select-style">
+							<option>Opção 1</option>
+							<option>Opção 2</option>
+							<option value="terceira opção">Opção 3</option>
+							<option>Opção 4</option>
+						</select>
+
+						<select id="select-style">
+							<option>Primeira Opção</option>
+							<option>Segunda Opção</option>
+							<option value="terceira opção">Terceira Opção</option>
+							<option>Quarta Opção</option>
 						</select>
 					</form>
 				</div>

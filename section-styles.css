@@ -46,6 +46,10 @@ cite:before{
 cite:after{
   content: close-quote;
 }
+/*adicionar a um span*/
+.caps{
+  text-transform: capitalize;
+}
 
 #list-image{
   width: 40%;
@@ -86,37 +90,84 @@ td > p{
   font-size: 100;
   text-align: center;
 }
+th{
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-radius: 5px 5px 0 0;
+}
 
 .formulario{
   text-align: center;
 }
-#login{
-  border: 5px double;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px black;
-  font-size: 30px;
-  /*text-align: center;*/
+.formulario *{
+  transition-duration: 1s;
+  font-family: 'Titillium Web';
 }
-#bt{
+.lb-style{
   background: #696969;
-  width: 40px;
-  border: 0px outset white;
-  border-radius: 5px;
-  cursor: pointer;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  font-size: 34px;
+  padding: 0 10px;
 }
-#select{
-  border: 5px double;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px black;
+#lb-login{
+  padding-right: 77px;
+}
+.input-style{
+  border: 0;
+  border-left: 1px solid #333333;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 5px 0 10px 1px #333333;
+  background: #808080;
+  margin-left: -5px;
+  color: #333333;
+  font-size: 34px;
+  width: 36%;
+}
+.input-style:focus{
+  outline: none;
+  border: 0;
+  border-left: 1px solid white;
+  box-shadow: 5px 0 10px 1px white;
+  background: white;
+}
+.formulario textarea{
+  border: 1px solid #808080;
+  border-radius: 5px 5px 0 5px;
+  box-shadow: 0 0 10px 1px #333333;
+  background: #808080;
+  color: #333333;
+  font-size: 20px;
+}
+.formulario textarea:focus{
+  outline: none;
+  border: 1px solid white;
+  box-shadow: 0 0 10px 1px white;
+  background: white;
+}
+.bt-style{
+  background: #696969;
   font-size: 30px;
-  width: 300px;
-  padding: 2px 10px;
-  background: #696969 url("http://i62.tinypic.com/15xvbd5.png") no-repeat 255px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  width: 60px;
+  border: 0px;
+  border-radius: 0 0 5px 5px;
+  margin-left: 44%;
+}
+.bt-style:hover{
+  background: white;
+  box-shadow: 0 0 10px 1px white;
 }
 
-/*adicionar a um span*/
-.caps{
-  text-transform: capitalize;
+#select-style{
+  color: white;
+  border: 5px double #333333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px black;
+  font-size: 30px;
+  width: 25%;
+  padding: 2px 10px;
+  background: #696969 url("http://i62.tinypic.com/15xvbd5.png") no-repeat 270px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
