@@ -55,14 +55,15 @@ h1{
 }
 
 #nav{
-  /*position: fixed;*/
-  margin: 0;
   width: 100%;
+  margin: 0;
   padding: 0;
   z-index: 999;
 }
+.nav-fixed{
+  position: fixed;
+}
 #div-links{
-  /*position: fixed;*/
   width: 80%;
   text-align: center;
   background-color: #717171;
@@ -94,9 +95,13 @@ ul#links li a:hover{
   transition-duration: 0.8s;
 }
 #nav-right{
+  width: 20%;
+  height: 52px;
   border-left: 1px solid white; 
   border-bottom: 1px solid white; 
-  background-color: #717171; 
-  height: 52px; 
-  width: 20%;
+  background-color: #717171;  
+}
+.nav-right-fixed{
+  position: fixed;
+  left: 80%;
 }
