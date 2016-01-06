@@ -21,26 +21,38 @@ $(function() {
 });
 
 /////////////////////////////////////////////////////////// 
+$(function(){
+
+});
 $(window).scroll(function() {
- console.log(this);
- if ($(this).scrollTop() >= 208) {
-  $('#nav').addClass("nav-fixed");
-  $('#nav-right').addClass("nav-right-fixed");
-  $('.aside').addClass("aside-fixed");
- } else {
-  $('#nav').removeClass("nav-fixed");
-  $('#nav-right').removeClass("nav-right-fixed");
-  $('.aside').removeClass("aside-fixed");
- }
+  if ($(this).scrollTop() < 210) {
+    $("#nav").removeClass("nav-fixed");
+    $("#nav-right").removeClass("nav-right-fixed");
+    $(".aside").removeClass("aside-fixed");
+    $("#dPai").css("margin-top", "30px");
+  } else {
+    $("#nav").addClass("nav-fixed");
+    $("#nav-right").addClass("nav-right-fixed");
+    $(".aside").addClass("aside-fixed");
+    $("#dPai").css("margin-top", "82px");
+  }
 });
 
-// var scrollNavbar = function(){
-//    var scrollar = document.documentElement.scrollTop;
-//    var navLeft = document.getElementById('nav');
-//    var navRight = document.getElementById('nav-right');
-//    var top = navLeft.style.top; 
-//    top = top - scrollar;
-//    navLeft.style.top = top + "px";
-//    navRight.style.top = top + "px";
-// }
-// $(window).scroll(scrollNavbar);
+
+// trying to fix the bug of refresh and
+// disappear the fixed elements
+
+// $(document).ready(function() {
+//   console.log(this);
+//   if ($(this).scrollTop() >= 210) {
+//     $("#nav").addClass("nav-fixed");
+//     $("#nav-right").addClass("nav-right-fixed");
+//     $(".aside").addClass("aside-fixed");
+//     $("#dPai").css("margin-top", "82px");
+//   } else {
+//     $("#nav").removeClass("nav-fixed");
+//     $("#nav-right").removeClass("nav-right-fixed");
+//     $(".aside").removeClass("aside-fixed");
+//     $("#dPai").css("margin-top", "30px");
+//   }
+// });

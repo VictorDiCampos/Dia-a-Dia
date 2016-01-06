@@ -2,6 +2,7 @@
   width: 20%;
   height: 100%;
   float: right;
+  clear: right;
 }
 
 .aside-fixed{
@@ -52,12 +53,15 @@ h3{
   width: 250px;
   height: 300px;
 }
+
 #rodape{
   background-color: #262626;
   color: #666666;
-  margin: 0 0; 
-  width: 100%;
+  margin: 0 0;
+  /*margin-top: 300px; */
+  width: 80%;
   height: 150px;
   z-index: 1;
   float: left;
+  clear: both;
 }
