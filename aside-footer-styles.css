@@ -3,6 +3,9 @@
   height: 100%;
   float: right;
   clear: right;
+  overflow: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .aside-fixed{

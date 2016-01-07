@@ -21,10 +21,8 @@ $(function() {
 });
 
 /////////////////////////////////////////////////////////// 
-$(function(){
 
-});
-$(window).scroll(function() {
+function scrollFixed() {
   if ($(this).scrollTop() < 210) {
     $("#nav").removeClass("nav-fixed");
     $("#nav-right").removeClass("nav-right-fixed");
@@ -36,8 +34,9 @@ $(window).scroll(function() {
     $(".aside").addClass("aside-fixed");
     $("#dPai").css("margin-top", "82px");
   }
-});
-
+}
+$(window).scroll(scrollFixed);
+$(document).ready(scrollFixed);
 
 // trying to fix the bug of refresh and
 // disappear the fixed elements
